@@ -10,4 +10,10 @@ class WelcomeController {
 
     return Redirect::to('/');
   }
+
+  public function logout() {
+    session_start();
+    session_destroy();
+    return Redirect::to('/');
+  }
 }

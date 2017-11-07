@@ -3,6 +3,7 @@
 class LoginController {
   public function index () {
     session_start();
+    
     view('index');
   }
 

@@ -11,11 +11,8 @@
         <div class="container">
             <header>
                 <h1>WELCOME TO OUR SYSTEM</h1>
+                <a href="/logout">Logout</a>
             </header>
-        <?php
-            //adding your code here
-        ?>
-            
 	</div>
     </body>
 </html>
