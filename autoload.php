@@ -10,3 +10,4 @@ require 'models/Users.php';
 require 'controllers/LoginController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/WelcomeController.php';
+require 'controllers/ErrorController.php';

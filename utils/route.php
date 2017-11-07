@@ -10,8 +10,6 @@ class Route {
       (new $controller)->$function();
       return;
     }
-
-    // Redirect('index');
   }
 
   public static function post( $path, $location ) {
@@ -23,8 +21,14 @@ class Route {
       (new $controller)->$function();
       return;
     }
+  }
 
-    // Redirect('welcome');
+  public static function any( $path, $location ) {
+    $cluster    = explode('@', $location);
+    $controller = $cluster[0];
+    $function   = $cluster[1];
+
+    (new $controller)->$function();
   }
 
 }

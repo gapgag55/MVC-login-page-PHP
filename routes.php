@@ -8,3 +8,5 @@ Route::post('/signup', 'RegisterController@signup');
 Route::get('/thankyou', 'RegisterController@thankyou');
 
 Route::get('/welcome', 'WelcomeController@index');
+
+Route::any('*', 'ErrorController@notFoud');
